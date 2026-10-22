@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт о биатлоне: правила, звёзды сезона, расписание гонок и глоссарий терминов.">
+  <title>Биатлон — правила, звёзды, расписание</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к основному содержанию</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Биатлон — на главную">
+        <img src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+        <span>Биатлон</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#rules" aria-current="page">Правила</a></li>
+          <li><a href="#stars">Звёзды сезона</a></li>
+          <li><a href="#schedule">Расписание</a></li>
+          <li><a href="#glossary">Глоссарий</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="hero-title">Биатлон: скорость, точность и характер</h1>
+          <p>
+            Биатлон — зимний вид спорта, сочетающий лыжные гонки и стрельбу из винтовки.
+            Узнайте правила, звёзд сезона, расписание гонок и ключевые термины.
+          </p>
+          <a class="btn" href="#rules">Изучить правила</a>
+        </div>
+        <img class="hero-img" src="assets/img/hero-biathlon.svg"
+             alt="Схематичное изображение биатлониста на лыжне с винтовкой" width="480" height="320">
+      </div>
+    </section>
+
+    <!-- ПРАВИЛА -->
+    <section id="rules" class="section" aria-labelledby="rules-title">
+      <div class="container">
+        <h2 id="rules-title">Правила биатлона</h2>
+        <div class="cards">
+          <article class="card" aria-labelledby="rule-1">
+            <h3 id="rule-1">Гонка и стрельба</h3>
+            <p>Спортсмен проходит дистанцию на лыжах и поражает мишени на огневых рубежах.</p>
+          </article>
+          <article class="card" aria-labelledby="rule-2">
+            <h3 id="rule-2">Штраф за промах</h3>
+            <p>В зависимости от дисциплины промах даёт штрафной круг или дополнительный патрон.</p>
+          </article>
+          <article class="card" aria-labelledby="rule-3">
+            <h3 id="rule-3">Дисциплины</h3>
+            <p>Спринт, преследование, индивидуальная гонка, масс-старт и эстафеты.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЗВЁЗДЫ СЕЗОНА -->
+    <section id="stars" class="section section-alt" aria-labelledby="stars-title">
+      <div class="container">
+        <h2 id="stars-title">Звёзды сезона</h2>
+        <p class="section-lead">Спортсмены, на которых стоит обратить внимание в этом сезоне.</p>
+
+        <div class="stars-grid">
+          <article class="star-card" aria-labelledby="star-1">
+            <img src="assets/img/star-1.svg" alt="Портрет биатлониста №1" width="96" height="96">
+            <h3 id="star-1">Анна Смирнова</h3>
+            <p class="star-meta">Спринт · Преследование</p>
+            <p>Лидер сборной по скорости стрельбы, трёхкратная победительница этапов Кубка мира.</p>
+          </article>
+
+          <article class="star-card" aria-labelledby="star-2">
+            <img src="assets/img/star-2.svg" alt="Портрет биатлониста №2" width="96" height="96">
+            <h3 id="star-2">Иван Петров</h3>
+            <p class="star-meta">Индивидуальная гонка</p>
+            <p>Стабильная стрельба стоя и высокая выносливость на длинных дистанциях.</p>
+          </article>
+
+          <article class="star-card" aria-labelledby="star-3">
+            <img src="assets/img/star-3.svg" alt="Портрет биатлониста №3" width="96" height="96">
+            <h3 id="star-3">Мария Ковалёва</h3>
+            <p class="star-meta">Масс-старт · Эстафета</p>
+            <p>Универсал: уверенно работает на финишных кругах и в эстафетных этапах.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- РАСПИСАНИЕ -->
+    <section id="schedule" class="section" aria-labelledby="schedule-title">
+      <div class="container">
+        <h2 id="schedule-title">Расписание гонок</h2>
+        <p class="section-lead">Ближайшие этапы сезона (пример расписания).</p>
+
+        <div class="schedule-layout">
+          <div class="table-wrap">
+            <table>
+              <caption>Календарь этапов Кубка мира (фрагмент)</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Дата</th>
+                  <th scope="col">Место</th>
+                  <th scope="col">Дисциплина</th>
+                  <th scope="col">Время</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10 января</td>
+                  <td>Оберхоф</td>
+                  <td>Спринт</td>
+                  <td>14:30</td>
+                </tr>
+                <tr>
+                  <td>12 января</td>
+                  <td>Оберхоф</td>
+                  <td>Преследование</td>
+                  <td>13:00</td>
+                </tr>
+                <tr>
+                  <td>18 января</td>
+                  <td>Рупольдинг</td>
+                  <td>Индивидуальная гонка</td>
+                  <td>12:15</td>
+                </tr>
+                <tr>
+                  <td>25 января</td>
+                  <td>Антхольц</td>
+                  <td>Масс-старт</td>
+                  <td>15:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <aside class="schedule-note" aria-labelledby="schedule-note-title">
+            <h3 id="schedule-note-title">Как читать расписание</h3>
+            <ul>
+              <li>Время указано местное для места проведения.</li>
+              <li>Возможны переносы из‑за погоды.</li>
+              <li>Проверяйте официальные источники перед гонкой.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ГЛОССАРИЙ -->
+    <section id="glossary" class="section section-alt" aria-labelledby="glossary-title">
+      <div class="container">
+        <h2 id="glossary-title">Глоссарий терминов</h2>
+        <dl class="glossary">
+          <div class="glossary-item">
+            <dt>Огневой рубеж</dt>
+            <dd>Место на трассе, где спортсмен стреляет по мишеням.</dd>
+          </div>
+          <div class="glossary-item">
+            <dt>Штрафной круг</dt>
+            <dd>Дополнительный круг за промах (в спринте, эстафете и др.).</dd>
+          </div>
+          <div class="glossary-item">
+            <dt>Лёжка</dt>
+            <dd>Стрельба из положения лёжа.</dd>
+          </div>
+          <div class="glossary-item">
+            <dt>Стойка</dt>
+            <dd>Стрельба из положения стоя.</dd>
+          </div>
+          <div class="glossary-item">
+            <dt>Преследование</dt>
+            <dd>Гонка, где стартовый порядок и отставание определяются по предыдущей гонке.</dd>
+          </div>
+          <div class="glossary-item">
+            <dt>Масс-старт</dt>
+            <dd>Гонка с общим стартом ограниченного числа спортсменов.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Биатлон — учебный проект по веб-технологиям.</p>
+      <p><a href="#top">Наверх ↑</a></p>
+    </div>
+  </footer>
+</body>
+</html>
