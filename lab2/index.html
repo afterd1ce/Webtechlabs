@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт о биатлоне: интерактивные компоненты и формы.">
+  <title>Биатлон — Интерактив</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к контенту</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="Биатлон — на главную">
+        <img src="assets/img/logo.svg" alt="" width="40" height="40" aria-hidden="true">
+        <span>Биатлон</span>
+      </a>
+
+      <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span class="burger-icon"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="#tabs-section">Дисциплины</a></li>
+          <li><a href="#accordion-section">Правила</a></li>
+          <li><a href="#delegation-section">Звёзды</a></li>
+          <li><a href="#form-section">Обратная связь</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Мир биатлона</h1>
+
+    <!-- 1. ТАБЫ -->
+    <section id="tabs-section" class="section">
+      <h2>Дисциплины биатлона</h2>
+      <div class="tabs-container">
+        <div class="tabs-list" role="tablist" aria-label="Дисциплины">
+          <button role="tab" id="tab-sprint" aria-selected="true" aria-controls="panel-sprint" tabindex="0">Спринт</button>
+          <button role="tab" id="tab-pursuit" aria-selected="false" aria-controls="panel-pursuit" tabindex="-1">Преследование</button>
+          <button role="tab" id="tab-mass" aria-selected="false" aria-controls="panel-mass" tabindex="-1">Масс-старт</button>
+        </div>
+        <div role="tabpanel" id="panel-sprint" aria-labelledby="tab-sprint" class="tab-panel" tabindex="0">
+          <p>Спринт — короткая гонка (10 км у мужчин, 7.5 км у женщин). Два огневых рубежа (лёжа и стоя). Промах = штрафной круг.</p>
+        </div>
+        <div role="tabpanel" id="panel-pursuit" aria-labelledby="tab-pursuit" class="tab-panel" tabindex="0" hidden>
+          <p>Преследование — гонка с раздельным стартом. Спортсмены стартуют с отставанием от лидера спринта. Четыре огневых рубежа.</p>
+        </div>
+        <div role="tabpanel" id="panel-mass" aria-labelledby="tab-mass" class="tab-panel" tabindex="0" hidden>
+          <p>Масс-старт — общий старт для 30 лучших спортсменов. Четыре огневых рубежа. Промах = штрафной круг.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. АККОРДЕОН -->
+    <section id="accordion-section" class="section">
+      <h2>Правила и термины</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h3>
+            <button class="accordion-header" aria-expanded="false" aria-controls="acc-content-1" id="acc-header-1">
+              Что такое огневой рубеж?
+            </button>
+          </h3>
+          <div id="acc-content-1" role="region" aria-labelledby="acc-header-1" class="accordion-content" hidden>
+            <p>Место на трассе, оборудованное для стрельбы. Спортсмены стреляют из положения лёжа и стоя.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3>
+            <button class="accordion-header" aria-expanded="false" aria-controls="acc-content-2" id="acc-header-2">
+              За что дают штрафной круг?
+            </button>
+          </h3>
+          <div id="acc-content-2" role="region" aria-labelledby="acc-header-2" class="accordion-content" hidden>
+            <p>Штрафной круг даётся за промах по мишени в спринте, преследовании и эстафете. В индивидуальной гонке за промах добавляют штрафное время.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ДЕЛЕГИРОВАНИЕ СОБЫТИЙ (Список звёзд) -->
+    <section id="delegation-section" class="section">
+      <h2>Любимые спортсмены</h2>
+      <p>Нажмите на сердечко, чтобы отметить спортсмена (обработчик на контейнере).</p>
+      <div class="cards-container" id="stars-container">
+        <article class="card">
+          <img src="assets/img/star-1.svg" alt="Портрет Анны Смирновой" width="64" height="64" class="card-avatar">
+          <h3>Анна Смирнова</h3>
+          <button class="like-btn" aria-pressed="false" aria-label="Нравится Анна Смирнова">
+            <span class="heart">♡</span> <span class="like-count">0</span>
+          </button>
+        </article>
+        <article class="card">
+          <img src="assets/img/star-2.svg" alt="Портрет Ивана Петрова" width="64" height="64" class="card-avatar">
+          <h3>Иван Петров</h3>
+          <button class="like-btn" aria-pressed="false" aria-label="Нравится Иван Петров">
+            <span class="heart">♡</span> <span class="like-count">0</span>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. МОДАЛЬНОЕ ОКНО и ФОРМА -->
+    <section id="form-section" class="section">
+      <h2>Связаться с нами</h2>
+      <p>Оставьте вопрос о биатлоне, и мы ответим!</p>
+      
+      <button class="btn" id="open-modal-btn" aria-haspopup="dialog">Написать нам</button>
+
+      <div class="modal-overlay" id="modal-overlay" hidden>
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <div class="modal-header">
+            <h2 id="modal-title">Обратная связь</h2>
+            <button class="modal-close" id="close-modal-btn" aria-label="Закрыть окно">&times;</button>
+          </div>
+          
+          <form id="feedback-form" novalidate>
+            <div class="form-group">
+              <label for="name">Имя <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required placeholder="Ваше имя">
+              <span class="error-msg" id="error-name" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+              <span class="error-msg" id="error-email" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение <span class="required">*</span></label>
+              <textarea id="message" name="message" required rows="4" minlength="20" placeholder="Минимум 20 символов..."></textarea>
+              <span class="error-msg" id="error-message" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn" id="submit-btn" disabled>Отправить</button>
+            <p id="form-success" class="success-msg" aria-live="polite" hidden>Спасибо! Ваше сообщение отправлено.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Биатлон — учебный проект по веб-технологиям.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

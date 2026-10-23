@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Биатлонист на лыжне</title>
+  <rect width="480" height="320" fill="#eef3fb"/>
+  <path d="M0 260 Q120 220 240 260 T480 260 V320 H0 Z" fill="#ffffff"/>
+  <circle cx="300" cy="90" r="22" fill="#0b2545"/>
+  <path d="M300 112 L285 170 L255 210" stroke="#0b3d91" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M285 140 L235 150" stroke="#0b3d91" stroke-width="10" stroke-linecap="round"/>
+  <path d="M285 140 L335 135" stroke="#0b3d91" stroke-width="10" stroke-linecap="round"/>
+  <path d="M255 210 L215 250" stroke="#0b2545" stroke-width="10" stroke-linecap="round"/>
+  <path d="M255 210 L295 245" stroke="#0b2545" stroke-width="10" stroke-linecap="round"/>
+  <rect x="330" y="120" width="70" height="8" rx="4" fill="#0b2545" transform="rotate(-15 330 120)"/>
+  <circle cx="400" cy="110" r="6" fill="#c9d6ea"/>
+  <circle cx="420" cy="118" r="6" fill="#c9d6ea"/>
+  <circle cx="440" cy="126" r="6" fill="#c9d6ea"/>
+</svg>
